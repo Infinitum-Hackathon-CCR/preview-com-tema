@@ -19,18 +19,16 @@ import AboutUs from "views/AboutUs";
 
 ReactDOM.render(
   <HashRouter basename="/">
-    <Switch>
-      {/* add routes with layouts */}
-      <Route path="/admin" component={Admin} />
-      <Route path="/auth" component={Auth} />
-      {/* add routes without layouts */}
-      <Route path="/landing" exact component={Landing} />
-      <Route path="/profile" exact component={Profile} />
-      <Route path="/aboutus" exact component={AboutUs} />
-      <Route path="/" exact component={Landing} />
-      {/* add redirect for first page */}
-      <Redirect from="*" to="/" />
-    </Switch>
+    {/* add routes with layouts */}
+    <Route path="/admin" component={Admin} />
+    <Route path="/auth" component={Auth} />
+    {/* add routes without layouts */}
+    <Route path="/landing" exact component={Landing} />
+    <Route path="/profile" exact component={Profile} />
+    <Route path="/aboutus" exact component={AboutUs} />
+    <Route path="/" exact component={Landing} />
+    {/* add redirect for first page */}
+    <Redirect from="*" to="/" />
   </HashRouter>,
   document.getElementById("root")
 );
