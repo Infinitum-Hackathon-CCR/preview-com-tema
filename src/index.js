@@ -12,7 +12,7 @@ ReactDOM.render(
   <React.StrictMode>
     <HashRouter basename="/">
       <Route exact path="/" component={Landing} />
-      <Route path="/about" component={AboutUs} />
+      <Route path="/aboutus" component={AboutUs} />
     </HashRouter>
   </React.StrictMode>,
   document.getElementById("root")
